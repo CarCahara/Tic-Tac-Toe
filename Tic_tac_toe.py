@@ -72,7 +72,7 @@ def player_choice(board): #ask player for next position and call space_check fun
             print(f"Position {pos} is not free. Please choose another positon.")
             continue
         
-def replay():
+def replay(): #Ask to play again
     
     while True:
         again = input("Play again ('Y' or 'N')? ")
@@ -81,7 +81,7 @@ def replay():
         elif again.upper() == 'N':
             return False
 
-while True:
+while True: #Actual game sequence
     print('Welcome to Tic Tac Toe! Positions as follows: ')
     board = [" "] * 9
     display_board([1, 2, 3, 4, 5, 6, 7, 8, 9])
